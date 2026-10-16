@@ -91,12 +91,15 @@
         />
         <br /><br />
 
-        <!-- Accommodation Number input: -->
+        <!-- Accommodation Number dropdown list: -->
+        <label for="accommodation">Accommodation Preference:</label>
         <select name="accommodation" id="accommodation">
           <option value="guesthouse">Guest House</option>
-          <option value="seprateHome">Seprate Home</option>
+          <option value="hotel">Hotel</option>
+          <option value="resort">Resort</option>
+          <option value="villa" selected>Villa</option>
         </select>
-        <br /><br />
+        <br /><br /> 
 
         <!-- fieldset: -->
         <fieldset>
@@ -104,7 +107,7 @@
           <legend>Preferred Activities</legend>
           <input
             type="checkbox"
-            name="Activities"
+            name="Activities" 
             value="snorkelling"
             id="snorkelling"
           />
@@ -113,7 +116,7 @@
 
           <input
             type="checkbox"
-            name="boatriding"
+            name="Activities"
             value="boatriding"
             id="boatriding"
           />
@@ -122,7 +125,7 @@
 
           <input
             type="checkbox"
-            name="scobadiving"
+            name="Activities"
             value="scobadiving"
             id="scobadiving"
           />
@@ -133,10 +136,10 @@
         <!-- Baby on Board radio button: -->
         <p><b>Baby on board</b></p>
         <label for="yes">Yes</label>
-        <input type="radio" id="yes" name="onBoard" />
+        <input type="radio" id="yes" value="yes" name="onBoard" />
 
         <label for="no">No</label>
-        <input type="radio" id="no" name="onBoard" />
+        <input type="radio" id="no" value="no" name="onBoard" />
 
         <!-- Special Request textarea: -->
         <p><b>Special Request:</b></p>
