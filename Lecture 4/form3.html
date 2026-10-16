@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Form</title>
+  </head>
+  <body>
+    <!-- Heading -->
+    <h1>Please Schedule your trip</h1>
+
+    <!-- form -->
+    <form action="">
+      <!-- fieldset -->
+      <fieldset>
+        <legend>Personal Info</legend>
+        <!-- Username input: -->
+        <!-- labal input: Provides a label for an input -->
+        <label for="username">Username:</label>
+        <!-- input text input: take user text input -->
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Devid Pol"
+        />
+        <br /><br />
+
+        <!-- User email input: -->
+        <label for="email">Email:</label>
+        <!-- input email input: use to email input -->
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@gmail.com"
+          minlength="5"
+          maxlength="15"
+        />
+        <br /><br />
+
+        <!-- Phone Number input: -->
+        <label for="phone">Phone Number:</label>
+        <!-- input tel input: use to tel input -->
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="+91-8127549910"
+          minlength="10"
+          maxlength="10"
+        />
+        <br /><br />
+
+        <!-- Date Of Birth input: -->
+        <label for="DOB">Date Of Birth:</label>
+        <input type="date" name="date" id="DOB" required />
+        <br />
+      </fieldset>
+      <br />
+
+      <!-- fieldset: -->
+      <fieldset>
+        <legend>Trip Details</legend>
+        <!-- Arrval input: -->
+        <label for="arrival">Arrival:</label>
+        <input type="datetime-local" id="arrival" name="arrival" required />
+        <br /><br />
+
+        <!-- Departure input: -->
+        <label for="departure">Departure:</label>
+        <input
+          type="datetime-local"
+          id="departure"
+          name="departure"
+          min="2021-10-10"
+          max="2021-12-10"
+          required
+        />
+        <br /><br />
+
+        <!-- Number of travelers input: -->
+        <label for="numberoftravelers">Number Of Travelers:</label>
+        <input
+          type="number"
+          name="numberoftravelers"
+          id="numberoftravelers"
+          min="3"
+          max="7"
+          required
+        />
+        <br /><br />
+
+        <!-- Accommodation Number input: -->
+        <select name="accommodation" id="accommodation">
+          <option value="guesthouse">Guest House</option>
+          <option value="seprateHome">Seprate Home</option>
+        </select>
+        <br /><br />
+
+        <!-- fieldset: -->
+        <fieldset>
+          <!-- Preferred Activities checkbox: -->
+          <legend>Preferred Activities</legend>
+          <input
+            type="checkbox"
+            name="Activities"
+            value="snorkelling"
+            id="snorkelling"
+          />
+          <label for="snorkelling">Snorkelling</label>
+          <br />
+
+          <input
+            type="checkbox"
+            name="boatriding"
+            value="boatriding"
+            id="boatriding"
+          />
+          <label for="boatriding">Boat Riding</label>
+          <br />
+
+          <input
+            type="checkbox"
+            name="scobadiving"
+            value="scobadiving"
+            id="scobadiving"
+          />
+          <label for="scobadiving">Scoba Diving</label>
+          <br /><br />
+        </fieldset>
+
+        <!-- Baby on Board radio button: -->
+        <p><b>Baby on board</b></p>
+        <label for="yes">Yes</label>
+        <input type="radio" id="yes" name="onBoard" />
+
+        <label for="no">No</label>
+        <input type="radio" id="no" name="onBoard" />
+
+        <!-- Special Request textarea: -->
+        <p><b>Special Request:</b></p>
+        <textarea
+          name="specialrequest"
+          id="specialrequest"
+          cols="50"
+          rows="5"
+        ></textarea>
+        <br /><br />
+
+        <!-- User Password input: -->
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          minlength="5"
+          maxlength="15"
+        />
+        <br /><br />
+
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
