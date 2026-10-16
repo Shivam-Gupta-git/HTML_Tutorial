@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown</title>
+  </head>
+  <body>
+    <!-- Basic Syntax of Dropdown -->
+    <fieldset>
+      <legend>Basic Syntax of Dropdown</legend>
+      <select>
+        <option>Option: 1</option>
+        <option>Option: 2</option>
+        <option>Option: 3</option>
+        <option>Option: 4</option>
+      </select>
+    </fieldset>
+
+    <!-- Select Your Country -->
+    <fieldset>
+      <legend>Select your country</legend>
+      <select name="country" id="country">
+        <option value="">Select a Country</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="uk">United Kingdom</option>
+      </select>
+    </fieldset>
+
+    <!-- Select Your Cource Using selected and required -->
+    <fieldset>
+      <legend>Select Your Cource</legend>
+      <form action="">
+        <label for="cource">Select Your Cource:</label>
+        <select name="cource" id="cource" required>
+          <option value="" selected disabled>Select Your Cource</option>
+          <option value="btech">B.Tech</option>
+          <option value="bca">BCA</option>
+          <option value="mca">MCA</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </fieldset>
+
+    <!-- option group -->
+    <fieldset>
+      <legend>option group</legend>
+      <label for="pref">Accommodation Preferences: </label>
+      <select name="pref" id="pref" required>
+        <optgroup label="Hotels">
+          <option value="3-star">3-star</option>
+          <option value="4-star">4-star</option>
+          <option value="5-star">5-star</option>
+        </optgroup>
+        <option value="resort">Resort</option>
+        <option value="villa">Villa</option>
+      </select>
+    </fieldset>
+  </body>
+</html>
