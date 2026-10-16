@@ -6,25 +6,35 @@
   <title>Booking Form</title>
 </head>
 <body>
+  <!-- Heading -->
   <h1>Please Schedule your trip</h1>
+
+  <!-- Form -->
   <form action="">
+    <!-- label tag -->
     <label for="username">Username:</label>
+    <!-- input text tag = use to take user input-->
     <input type="text" name="username" id="username" minlength="5" maxlength="10" required placeholder="Enter your Username">
+    <!-- br tag -->
     <br><br>
 
     <label for="email">Email</label>
+    <!-- input email tag -->
     <input type="email" name="email" id="email" required placeholder="Enter your Email">
     <br><br>
 
     <label for="phone">Phone Number: </label>
+    <!-- input telephone tag -->
     <input type="tel" name="phone" id="phone" required placeholder="Enter Your Contact Number: ">
     <br><br>
-
+    
     <label for="DOB">Date Of Birth: </label>
+    <!-- input date tag -->
     <input type="date" name="DOB" id="DOB" required>
     <br><br>
 
     <label for="arrival">Arrival: </label>
+    <!-- input datetime-local tag -->
     <input type="datetime-local" name="arrival" id="arrival" required >
     <br><br>
 
@@ -33,11 +43,15 @@
     <br><br>
 
     <label for="numberoftravelers">Number Of Travelers: </label>
+    <!-- input number tag -->
     <input type="number" name="numberoftravelers" id="numberoftravelers" required min="3" max="10">
     <br><br>
 
     <label for="accommodation">Accommodation Number: </label>
+    <!-- select tag with options -->
     <select name="accommodation" id="accommodation">
+      <option value="guesthouse">Guest House</option>
+      <option value="guesthouse">Guest House</option>
       <option value="guesthouse">Guest House</option>
     </select>
     <br><br>
@@ -54,8 +68,16 @@
     <label for="scobadiving">Scoba Diving</label>
     <br><br>
 
+    <!-- Radio button -->
+    <p><b>Baby on board?</b></p>
+    <label for="yes">Yes</label>
+    <input type="radio" id="yes" name="onBoard">
+    <label for="no">No</label>
+    <input type="radio" id="no" name="onBoard">
+    <br><br>
 
     <label for="password">Password: </label>
+    <!-- input password tag -->
     <input type="password" name="password" id="password" minlength="5" maxlength="10" required placeholder="Enter your Password">
     <br><br>
 
