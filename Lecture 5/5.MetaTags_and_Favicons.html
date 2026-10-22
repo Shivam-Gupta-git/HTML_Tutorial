@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="introductory of frontend development"/>
+    <meta name="keywords" content="html, css, javascript, react, frontend development, web design, frontnd framework"/>
+    <link rel="icon" type="image/icon" href="../Images/metatag.jpg"/>
+    <title>Meta tags and favicons</title>
+  </head>
+  <body>
+    <header>
+      <ul
+        style="
+          display: flex;
+          flex-direction: row;
+          background-color: bisque;
+          align-items: center;
+          justify-content: center;
+          margin: 5px;
+          padding: 10px;
+          border-radius: 10px;
+          gap: 30px;
+          list-style: none;
+          display: sticky;
+          top: 0;
+          left: 0;
+        "
+      >
+        <li>
+          <a
+            href="#home"
+            style="
+              text-decoration: none;
+              color: rgb(93, 92, 92);
+              font-size: 20px;
+              background-color: rgb(192, 190, 190);
+              padding: 5px 10px 5px 10px;
+              border-radius: 10px;
+            "
+            >HOME</a
+          >
+        </li>
+        <li>
+          <a
+            href="#html"
+            style="
+              text-decoration: none;
+              color: rgb(93, 92, 92);
+              font-size: 20px;
+              background-color: rgb(192, 190, 190);
+              padding: 5px 10px 5px 10px;
+              border-radius: 10px;
+            "
+            >HTML</a
+          >
+        </li>
+        <li>
+          <a
+            href="#css"
+            style="
+              text-decoration: none;
+              color: rgb(93, 92, 92);
+              font-size: 20px;
+              background-color: rgb(192, 190, 190);
+              padding: 5px 10px 5px 10px;
+              border-radius: 10px;
+            "
+            >CSS</a
+          >
+        </li>
+        <li>
+          <a
+            href="#javascript"
+            style="
+              text-decoration: none;
+              color: rgb(93, 92, 92);
+              font-size: 20px;
+              background-color: rgb(192, 190, 190);
+              padding: 5px 10px 5px 10px;
+              border-radius: 10px;
+            "
+            >JAVASCRIPT</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            style="
+              text-decoration: none;
+              color: rgb(93, 92, 92);
+              font-size: 20px;
+              background-color: rgb(192, 190, 190);
+              padding: 5px 10px 5px 10px;
+              border-radius: 10px;
+            "
+            >CONTACT</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <!-- Main: Contains the primary content of the webpage -->
+    <main id="home">
+      <!-- Section 1: Introduction -->
+      <section id="html">
+        <h2>Introduction of <strong>HTML</strong></h2>
+        <p>
+          HTML stands for <strong>HyperText Markup Language</strong>. It is used
+          to structure content on webpages
+        </p>
+        <p>
+          HTML provides different elements to organize
+          <strong>headings, paragraphs, images, links, tables, and forms</strong
+          >.
+        </p>
+      </section>
+      <hr />
+
+      <!-- Section 2: Semantic Tags -->
+      <section id="semantic-tags">
+        <h2>What are Semantic Tags?</h2>
+        <p>
+          Semantic tags are HTML elements that describe the meaning and purpose
+          of their <strong>content</strong>. They make HTML code easier to
+          understand and help assistive technologies interpret webpage
+          structure.
+        </p>
+
+        <!-- Article: Independent, self-contained content -->
+        <article>
+          <header>
+            <h3>1. The Header Tag</h3>
+            <p>
+              Published on <time datetime="2026-10-22">October 22, 2026</time>
+            </p>
+          </header>
+          <p>
+            The &lt;header&gt; tag represents introductory content for a webpage
+            or a section. It commonly contains a logo, heading, or introductory
+            information.
+          </p>
+        </article>
+
+        <article>
+          <h3>2. The Nav Tag</h3>
+          <p>
+            The &lt;nav&gt; tag defines a section containing important
+            navigation links, such as Home, About,Services, and Contact.
+          </p>
+        </article>
+
+        <article>
+          <h3>3. The Main Tag</h3>
+          <p>
+            The &lt;main&gt; tag contains the primary content of a webpage. A
+            page should generally have only one visible main element.
+          </p>
+        </article>
+
+        <article>
+          <h3>4. The Section Tag</h3>
+          <p>
+            The &lt;section&gt; tag groups related content under a common theme,
+            usually with a heading.
+          </p>
+        </article>
+
+        <article>
+          <h3>5. The Article Tag</h3>
+          <p>
+            The &lt;article&gt; tag represents independent, self-contained
+            content, such as a blog post, news story, or forum post.
+          </p>
+        </article>
+
+        <article>
+          <h3>6. The Aside Tag</h3>
+          <p>
+            The &lt;aside&gt; tag contains supplementary content related to the
+            main content, such as related articles, tips, or a sidebar.
+          </p>
+        </article>
+      </section>
+      <hr />
+
+      <!-- Section 3: Figure and Figcaption -->
+      <section id="html-elements">
+        <h2>More Useful Semantic Tags</h2>
+
+        <article>
+          <h3>7. The Figure and Figcaption Tags</h3>
+          <p>
+            The &lt;figure&gt; tag groups self-contained content, such as an
+            image, diagram, or illustration.The &lt;figcaption&gt; tag provides
+            a caption for it.
+          </p>
+
+          <figure>
+            <img
+              src="../Images/html.jpg"
+              alt="Illustration representing HTML learning"
+              style="width: 100px"
+            />
+            <figcaption>Figure 1: Learning the basics of HTML.</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>8. The Details and Summary Tags</h3>
+          <p>
+            The &lt;details&gt; tag creates expandable content. The
+            &lt;summary&gt; tag provides a visible heading that users can click
+            to expand or collapse the content.
+          </p>
+
+          <details>
+            <summary>What is CSS ?</summary>
+            <p>
+              CSS stands for Cascading Style Sheets. It controls the appearance
+              and layout of webpages.
+            </p>
+          </details>
+        </article>
+
+        <article>
+          <h3>9. The Time Tag</h3>
+          <p>
+            The &lt;time&gt; tag represents a date or time in a machine-readable
+            format.
+          </p>
+          <p>
+            This article was published on
+            <time datetime="2026-10-22">October 22, 2026</time>.
+          </p>
+        </article>
+      </section>
+      <hr />
+
+      <!-- Section 4: CSS -->
+      <section id="css">
+        <h2>Introduction to CSS</h2>
+        <p>
+          CSS stands for Cascading Style Sheets. It is used to style HTML
+          elements by changing colors, fonts, spacing, borders, and layouts.
+        </p>
+      </section>
+      <hr />
+
+      <!-- Aside: Supplementary information -->
+      <aside>
+        <h2>Quick Learning Tips</h2>
+        <ul>
+          <li>Practice HTML every day.</li>
+          <li>Use semantic tags where appropriate.</li>
+          <li>Learn CSS to improve webpage design.</li>
+          <li>Practice JavaScript to build interactive websites.</li>
+        </ul>
+      </aside>
+      <hr />
+
+      <!-- Contact section -->
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+      </section>
+      <hr>
+    </main>
+
+    <!-- Footer: Contains copyright and related information -->
+
+    <footer>
+      <p>&copy; 2026 Web Development Blog. All rights reserved.</p>
+
+      <nav aria-label="Footer navigation">
+        <a href="#home">Back to Top</a> | <a href="#contact">Contact Us</a>
+      </nav>
+    </footer>
+  </body>
+</html>
